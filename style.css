@@ -132,15 +132,16 @@ h1 {
 .who-we-are p {
   padding-left: 300px;
   padding-right: 300px;
- text-align: center;
-   line-height: 150%; 
+  text-align: center;
+  line-height: 150%; 
 }
 
-.who-we-are img {
+.who-we-are img, .imgs, .imgsb, .imgsc {
   width: 330px;
   height: 330px;
-  padding-top: 50px;
-  padding-right: 26px;
+  padding-top: 30px;
+  padding-right: 30px;
+  display: inline-block;
 }
 
 .imgs {
@@ -152,14 +153,38 @@ h1 {
   font-size: 1.2em;
   z-index: 100;
   position: absolute; 
-  top:350px;
+  /*top:350px;*/
+  left: 243px;
+  top: 162px;
+  font-weight: bold;
+  color: #000000;
+
 }
 
-.imgs p {
+.imgsb h3{
   font-size: 1.2em;
   z-index: 100;
   position: absolute; 
-  top:350px;
+  /*top:350px;*/
+
+    left: 592px;
+  top: 804px;
+  font-weight: bold;
+  color: #000000;
+
+}
+
+.imgsc h3{
+  font-size: 1.2em;
+  z-index: 100;
+  position: absolute; 
+  /*top:350px;*/
+
+    left: 962px;
+  top: 804px;
+  font-weight: bold;
+  color: #000000;
+
 }
 
 .imgs h3:first-child {
@@ -168,7 +193,8 @@ h1 {
   font-weight: bold;
   color: #000000;
 }
-.imgs h3:nth-child(2) {
+
+/*.imgs h3:nth-child(2) {
   left: 592px;
   top: 162px;
   font-weight: bold;
@@ -179,7 +205,8 @@ h1 {
   top: 162px;
   font-weight: bold;
   color: #000000;
-}
+}*/
+
 /******************************************************/
 .general-info {
   /*width: 100%;*/
@@ -252,11 +279,6 @@ h1 {
 }
 .bigger-button {
   color: #cccc00;
-  background-color:#cc3366;
-  text-decoration: none;
-  margin-left: 550px;
-  padding: 22px 35px 22px 35px;
-  font-weight: 700;  
 }
 /******************************************************/
 footer, footer nav a {
