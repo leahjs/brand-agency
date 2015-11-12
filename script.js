@@ -7,6 +7,11 @@ $(document).ready(function() {
   slider.on('unslider.ready', function() {
     // alert('Slider is set up!');
   });
+  // $('.who-we-are').on('mouseenter', '.imgs', function(){
+  //   $(this).fadeIn('slow', function(){
+
+  //   })
+  // })
 
   $('.nav-bar').on('mouseenter', 'a', function(){
     $(this).addClass('nav-color');
@@ -26,13 +31,16 @@ $(document).ready(function() {
   })
 
   $('.imgs').on('mouseenter', 'img', function(){
-    $(this).css('width', '350px');
-    $(this).css('height', '350px');
+    $(this).animate({ opacity: "0.4" }, 200 );
+    // $(this).css('width', '350px');
+    // $(this).css('height', '350px');
   })
 
   $('.imgs').on('mouseleave', 'img', function(){
-    $(this).css('width', '330px');
-    $(this).css('height', '330px');
+    $(this).animate({ opacity: "1"  }, 200 );
+
+    // $(this).css('width', '330px');
+    // $(this).css('height', '330px');
   })
 
 

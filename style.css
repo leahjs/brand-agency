@@ -203,20 +203,25 @@ h1 {
   left: 238px;
   top: 162px;
   font-weight: bold;
-  color: #fff;
+  
+ color: #000000;
 }
 .imgs h3:nth-child(2) {
   left: 592px;
   top: 162px;
   font-weight: bold;
-  color: #fff;
+  
+ color: #000000;
+
 }
 .imgs h3:nth-child(3) {
   /*float: right;*/
   left: 962px;
   top: 162px;
   font-weight: bold;
-  color: #fff;
+  
+ color: #000000;
+
 }
 /*.workforme {
   left: 665px;
