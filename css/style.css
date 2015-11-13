@@ -420,4 +420,17 @@ footer span {
   .imgs-same h3 {
     /*height: auto;*/
   }
+  .hero-slider, .hero-slider img {
+    height: 440px;
+  }
+}
+@media only screen and (max-width:687px) {
+  .hero-slider, .hero-slider img {
+    height: 480px;
+  }
+}
+@media only screen and (max-width:687px) {
+  .hero-slider, .hero-slider img {
+    height: 520px;
+  }
 }
