@@ -7,4 +7,8 @@
 
   });
 
+  $.getScript("slider.js", function(){
+
+  });
+
 // });
