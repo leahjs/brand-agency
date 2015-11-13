@@ -15,40 +15,14 @@ $(document).ready(function() {
     $(this).removeClass('button-topa');
   })
 
-  $('.imgs-same').on('mouseenter', 'img', function(){
+  $('.imgs-same').on('mouseenter', function(){
     $(this).animate({ opacity: "0.4" }, 200);
     // $(this).animate({ fontSize: "24px" }, 1000 );
   })
 
-  $('.imgs-same').on('mouseenter', 'h3', function(){
-    $(this).animate({ opacity: "0.4" }, 200);
-    // $(this).animate({ fontSize: "24px" }, 1000 );
-  })
-
-  $('.imgs-same').on('mouseleave', 'img', function(){
+  $('.imgs-same').on('mouseleave', function(){
     $(this).animate({ opacity: "1"  }, 200 );
     // $(this).animate({ fontSize: "14px" }, 1000 );
-  })
-
-  $('.imgs-same').on('mouseleave', 'h3', function(){
-    $(this).animate({ opacity: "1"  }, 200 );
-    // $(this).animate({ fontSize: "14px" }, 1000 );
-  })
-
-  $('.imgsb').on('mouseenter', 'img', function(){
-    $(this).animate({ opacity: "0.4" }, 200 );
-  })
-
-  $('.imgsb').on('mouseleave', 'img', function(){
-    $(this).animate({ opacity: "1"  }, 200 );
-  })
-
-  $('.imgsc').on('mouseenter', 'img', function(){
-    $(this).animate({ opacity: "0.4" }, 200 );
-  })
-
-  $('.imgsc').on('mouseleave', 'img', function(){
-    $(this).animate({ opacity: "1"  }, 200 );
   })
 
   $('.our-clients').on('mouseenter', 'img', function(){
