@@ -24,12 +24,24 @@ $(document).ready(function() {
     $(this).removeClass('button-topa');
   })
 
-  $('.imgs').on('mouseenter', 'img', function(){
-    $(this).animate({ opacity: "0.4" }, 200 );
+  $('.imgs-same').on('mouseenter', 'img', function(){
+    $(this).animate({ opacity: "0.4" }, 200);
+    // $(this).animate({ fontSize: "24px" }, 1000 );
   })
 
-  $('.imgs').on('mouseleave', 'img', function(){
+  $('.imgs-same').on('mouseenter', 'h3', function(){
+    $(this).animate({ opacity: "0.4" }, 200);
+    // $(this).animate({ fontSize: "24px" }, 1000 );
+  })
+
+  $('.imgs-same').on('mouseleave', 'img', function(){
     $(this).animate({ opacity: "1"  }, 200 );
+    // $(this).animate({ fontSize: "14px" }, 1000 );
+  })
+
+  $('.imgs-same').on('mouseleave', 'h3', function(){
+    $(this).animate({ opacity: "1"  }, 200 );
+    // $(this).animate({ fontSize: "14px" }, 1000 );
   })
 
   $('.imgsb').on('mouseenter', 'img', function(){

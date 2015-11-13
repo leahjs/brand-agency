@@ -122,7 +122,7 @@ h1 {
   height: 600px;
 }
 
-.who-we-are h3 {
+.who-we-are h3:first-child {
  font-size: 1.5em;
  text-align: center;
  padding-top: 50px;
@@ -137,11 +137,21 @@ h1 {
 }
 
 .who-we-are img, .imgs, .imgsb, .imgsc {
-  width: 330px;
-  height: 330px;
-  padding-top: 30px;
-  padding-right: 30px;
+  width: 300px;
+  height: 300px;
+  padding-top: 0px;
+  padding-right: 0px;
   display: inline-block;
+}
+.wwap {
+  padding-bottom: 50px;
+}
+.imgsb img {
+  margin-left: 457px;
+}
+
+.imgsc img {
+  margin-left: 800px;
 }
 
 .imgs {
@@ -149,50 +159,44 @@ h1 {
   position: relative; 
 }
 
-.imgs h3 {
+.imgs-same {
   font-size: 1.2em;
   z-index: 100;
-  position: absolute; 
-  /*top:350px;*/
-  left: 243px;
-  top: 162px;
-  font-weight: bold;
+  position: absolute;
   color: #000000;
-
+  font-weight: bold; 
 }
 
-.imgsb h3{
-  font-size: 1.2em;
+.imgs h3 {
   z-index: 100;
-  position: absolute; 
-  /*top:350px;*/
+  position: absolute;
+  margin-left: 50px;
+  left: 160px;
+  top: 69px;
+}
 
-    left: 592px;
-  top: 804px;
-  font-weight: bold;
-  color: #000000;
-
+.imgsb h3 {
+    z-index: 100;
+  position: absolute;
+  margin-left: 551px;
+  left: 0;
+  top: 69px;
 }
 
 .imgsc h3{
-  font-size: 1.2em;
-  z-index: 100;
-  position: absolute; 
-  /*top:350px;*/
-
-    left: 962px;
-  top: 804px;
-  font-weight: bold;
-  color: #000000;
-
+    z-index: 100;
+  position: absolute;
+  margin-left: 800px;
+  left: 92px;
+  top: 69px;
 }
 
-.imgs h3:first-child {
+/*.imgs h3:first-child {
   left: 238px;
   top: 162px;
   font-weight: bold;
   color: #000000;
-}
+}*/
 
 /*.imgs h3:nth-child(2) {
   left: 592px;
