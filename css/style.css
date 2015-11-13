@@ -29,9 +29,16 @@ nav a {
 
 h1 {
   font-size: 2em;
-  display: inline;
+  /*display: inline;*/
 }
-
+p {
+  margin-bottom: 20px;
+}
+.hero-slider img {
+  width:100%;
+  max-width: 100%;
+  height: auto;
+}
 .unslider-nav {
   display: none;
 }
@@ -69,28 +76,38 @@ h1 {
 }
 
 .intro {
-  z-index: 100;
-  position: absolute; 
   text-align: center;
-  top: 130px;
-  padding: 0 290px 0 290px;
+  margin: 0 auto;
+  width: 33%;
   color: #FFFFFF;
   text-shadow: 1px 1px #000000;
+  margin: 90px auto;
+  width: 55%;
+  /*padding: 0 290px 0 290px;*/
+  /*z-index: 100;*/
+  /*position: absolute; */
+  /*top: 130px;*/
 }
 .intro span {
   color: #cccc00;
 }
 
-.button-top {
+.hero-front-container {
   z-index: 100;
   position: absolute; 
+  top: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.button-top {
+  margin: 50px auto;
+  display: block;
+  width: 200px;
   text-decoration: none;
   font-weight: 700;
   color: #FFFFFF;
-  margin-left: 550px;
   border-width: 3px;
-  margin-left: 554px;
-  margin-top: 246px;
   border-color: #fff;
   border-style: solid;
   padding: 12px 35px 12px 35px;
@@ -114,15 +131,17 @@ h1 {
   box-shadow: 1px 1px 0px #000000;
 }
 .unslider-arrow {
+  z-index: 101;
   margin-top: -200px;
 }
 
 .who-we-are {
-  width: 100%;
-  height: 600px;
+  width: 90%;
+  margin: 0 auto;
+  /*height: 600px;*/
 }
 
-.who-we-are h3:first-child {
+.who-we-are-title {
  font-size: 1.5em;
  text-align: center;
  padding-top: 50px;
@@ -130,65 +149,102 @@ h1 {
 }
 
 .who-we-are p {
-  padding-left: 300px;
-  padding-right: 300px;
+  width: 75%;
+  margin: 0 auto;
+  /*padding-left: 300px;
+  padding-right: 300px;*/
   text-align: center;
   line-height: 150%; 
 }
 
 .who-we-are img, .imgs, .imgsb, .imgsc {
-  width: 300px;
+/*  width: 300px;
   height: 300px;
   padding-top: 0px;
-  padding-right: 0px;
-  display: inline-block;
+  padding-right: 0px;*/
+  /*display: inline-block;*/
 }
 .wwap {
   padding-bottom: 50px;
 }
-.imgsb img {
-  margin-left: 457px;
-}
-
-.imgsc img {
-  margin-left: 800px;
-}
 
 .imgs {
-  padding-left: 113px;
-  position: relative; 
+  background: url(../images/service--1.jpg) no-repeat center;
+  background-size: cover;
+/*  padding-left: 113px;
+  position: relative; */
+}
+
+.imgsb {
+  background: url(../images/service--2.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.imgsc {
+  background: url(../images/service--3.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .imgs-same {
+  /*margin-left: 4%;*/
   font-size: 1.2em;
-  z-index: 100;
-  position: absolute;
   color: #000000;
   font-weight: bold; 
+  /*width: 30.666%;*/
+  height: 50.666%;
+/*  z-index: 100;
+  position: absolute;*/
+}
+
+.imgs-same:nth-of-type(1) {
+  margin-left: 0;
+}
+
+.imgsb img {
+  /*margin-left: 457px;*/
+}
+
+.imgsc img {
+  /*margin-left: 800px;*/
 }
 
 .imgs h3 {
-  z-index: 100;
-  position: absolute;
-  margin-left: 50px;
-  left: 160px;
-  top: 69px;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  /*z-index: 100;*/
+  /*position: absolute;*/
+  /*margin-left: 50px;*/
+/*  left: 160px;
+  top: 69px;*/
 }
 
 .imgsb h3 {
-    z-index: 100;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+/*    z-index: 100;
   position: absolute;
   margin-left: 551px;
   left: 0;
-  top: 69px;
+  top: 69px;*/
 }
 
 .imgsc h3{
-    z-index: 100;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+/*    z-index: 100;
   position: absolute;
   margin-left: 800px;
   left: 92px;
-  top: 69px;
+  top: 69px;*/
 }
 
 /*.imgs h3:first-child {
@@ -212,42 +268,72 @@ h1 {
 }*/
 
 /******************************************************/
-.general-info {
+.row {
   /*width: 100%;*/
-  height: 500px;
+  clear: both;
+  /*background-color: #E6E6E6;*/
+  padding: 4%;
+}
+.row:after {
+  content:".";
+  clear: both;
+  display: block;
+  visability: hidden;
+  height: 0;
+  line-height: 0;
+}
+
+.general-info {
   background-color: #E6E6E6;
+}
+[class*="col-"]{
+  float: left;
+  margin-left: 4%;
+}
+
+[class*="col-"]:first-child{
+  margin-left: 0;
+}
+
+.col-4 {
+ width: 30.666%;
+}
+
+.col-8 {
+ width: 65.334%;
 }
 
 .title1 {
-  padding-left: 60px;
-  padding-top: 65px;
+/*  padding-left: 60px;
+  padding-top: 65px;*/
 }
 
 .general-info p {
-  padding-top: 15px;
+/*  padding-top: 15px;
   padding-left: 60px;
   padding-right: 776px;
   display: inline-block;
   line-height: 160%;
-  float:left;
+  float:left;*/
 }
 
 .para-two {
-  margin-top: -435px;
+/*  margin-top: -435px;
   float: right;
   margin-left: 582px;
   text-align: left;
   padding-right: 60px;
-  line-height: 160%;
+  line-height: 160%;*/
 }
 .title {
-  padding-bottom: 13px;
+  /*padding-bottom: 13px;*/
 }
 
 /******************************************************/
 .our-clients {
   width: 100%;
-  height: 540px;
+  /*height: 540px;*/
+  padding-bottom: 40px;
 }
 .title-oc {
   text-align: center;
@@ -258,9 +344,9 @@ h1 {
 .our-clients p {
   line-height: 214%;
   text-align: center;
-  margin-left: 396px;
-  margin-right: 400px;
   padding-bottom: 20px;
+  width: 75%;
+  margin:0 auto;
 }
 
 .our-clients img {
@@ -270,16 +356,23 @@ h1 {
   filter: grayscale(1); /* Firefox 35+ */
   -webkit-filter: grayscale(1);
 }
+.client-img {
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+}
 
 .button {
+  margin: 0 auto;
   color: #FFFFFF;
-  width: 20px;
+  width: 200px;
   height: 35px;
-  background-color:#cc3366;
+  background-color: #cc3366;
   text-decoration: none;
-  margin-left: 550px;
   padding: 15px 32px 15px 32px;
   font-weight: 700;
+  display: block;
+  text-align: center;
 }
 .bigger-button {
   color: #009999;
@@ -308,4 +401,23 @@ footer nav {
 
 footer span {
   font-weight: 400;
+}
+
+/*Devices*/
+@media only screen and (max-width:950px) {
+  .imgs-same {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-left: 0;
+    margin-bottom: 4%;
+  }
+  [class*="col-"] {
+    float: none;
+    margin-left: 0;
+    width: 100%;
+  }
+  .imgs-same h3 {
+    /*height: auto;*/
+  }
 }

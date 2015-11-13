@@ -59,8 +59,8 @@
 			//  Either set true/false, or an object with the HTML
 			//  elements for each arrow like below:
 			arrows: {
-				prev: '<a class="' + self._ + '-arrow prev"><img src="images/Left_2.png"></a>',
-				next: '<a class="' + self._ + '-arrow next"><img src="images/Right_2.png"></a>'
+				prev: '<a class="' + self._ + '-arrow prev"><i class="fa fa-chevron-left fa-3x"></i></a>',
+				next: '<a class="' + self._ + '-arrow next"><i class="fa fa-chevron-right fa-3x"></i></a>'
 			},
 
 			//  How should Unslider animate?
